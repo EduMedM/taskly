@@ -6,7 +6,7 @@
 
 generator client {
   provider = "prisma-client-js"
-  output = "../../node_modules/.prisma/client"
+
 }
 
 datasource db {
@@ -16,7 +16,15 @@ datasource db {
 }
 
 model Board {
-  id String @id @default(uuid())
+  id            String @id @default(uuid())
+  orgId         String
+  title         String
+  imageId       String
+  imageThumbUrl String
+  imageFullUrl  String
+  imageUserName String
+  imageLinkHTML String
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
 
-  title String
 }
