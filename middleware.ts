@@ -6,9 +6,14 @@ const isProtectedRoute = createRouteMatcher([
   "/board(.*)",
   "/select-org",
   "/api/cards(.*)",
+  //"/api/webhook",
 ]);
 
 export default clerkMiddleware((auth, req) => {
+  if (req.url.includes("/api/webhook")) {
+    return NextResponse.next();
+  }
+
   if (!auth().userId && isProtectedRoute(req)) {
     return auth().redirectToSignIn({ returnBackUrl: req.url });
   }
