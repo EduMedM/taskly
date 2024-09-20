@@ -40,7 +40,6 @@ export const FormPopover = ({
     },
     onError: (error) => {
       toast.error(error);
-      //proModal.onOpen();
     },
   });
 
@@ -73,7 +72,6 @@ export const FormPopover = ({
         </PopoverClose>
         <form action={onSubmit} className="space-y-4">
           <div className="space-y-4">
-            {/* <FormPicker id="image" errors={fieldErrors} /> */}
             <FormPicker id="image" errors={fieldErrors}></FormPicker>
             <FormInput
               id="title"
