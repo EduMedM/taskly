@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { CreditCard } from "lucide-react";
 import { useOrganization } from "@clerk/nextjs";
-
 import { Skeleton } from "@/components/ui/skeleton";
 
 interface InfoProps {

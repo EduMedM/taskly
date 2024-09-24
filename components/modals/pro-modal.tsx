@@ -1,9 +1,7 @@
 "use client";
 
 import Image from "next/image";
-
 import { Button } from "@/components/ui/button";
-
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { useAction } from "@/hooks/use-action";
 import { stripeRedirect } from "@/actions/stripe-redirect";
