@@ -9,13 +9,12 @@ Taskly is a task management application built with modern web technologies to he
 1. Clone the repository:
    ```sh
    git clone https://github.com/EduMedM/taskly.git
-   cd taskly
    ```
 2. Install dependencies:
    ```sh
    npm install
    ```
-3. Set up environment variables (e.g., database credentials in `.env`).
+3. Set up environment variables `.env`.
 4. Run the development server:
    ```sh
    npm run dev
@@ -32,13 +31,12 @@ Taskly es una aplicación de gestión de tareas construida con tecnologías web 
 1. Clona el repositorio:
    ```sh
    git clone https://github.com/EduMedM/taskly.git
-   cd taskly
    ```
 2. Instala las dependencias:
    ```sh
    npm install
    ```
-3. Configura las variables de entorno (por ejemplo, credenciales de la base de datos en `.env`).
+3. Configura las variables de entorno en `.env`.
 4. Ejecuta el servidor de desarrollo:
    ```sh
    npm run dev
